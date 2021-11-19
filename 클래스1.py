@@ -1,28 +1,16 @@
-class GoldFishBread:
-    def make_Gold(self, ingredients, price):
-        self.ingredients = ingredients
-        self.price = price
+class Student:
+    def __init__(self, name,age,contry):
+        self.name = name
+        self.age = age
+        self.contry = contry
 
 
-    def see_Gold(self):
-        print(self.ingredients, self.price)
+name = input("이름:")
+age = int(input("나이:"))
+contry = input("출신:")
 
-a = GoldFishBread()
-b = GoldFishBread()
+st = Student(name, age,contry)
 
-a.make_Gold('팥', 30000)
-b.make_Gold('슈크림',30000)
-
-
-a.see_Gold()
-b.see_Gold()
-
-
-
-
-
-
-
-
-
-
+print("당신의 이름은 %s입니다"%st.name)
+print("당신의 나이는 %d입니다"%st.age)
+print("당신은 '%s'출신입니다 "%st.contry)

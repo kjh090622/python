@@ -1,21 +1,13 @@
-class GoldFishBread:
-    def make_Gold(self, ingredients, price):
-        self.ingredients = ingredients
-        self.price = price
-    def see_Gold(self):
-        print(self.ingredients, self.price)
+class game:
+  def __init__(self,name,level,server):
+    self.name = name
+    self.level = level
+    self.server = server
 
-    def __add__(self,other):
-        return self.price + other.price
+name = input("name:")
+level = int(input("level:"))
+server = input("server:")
 
-a = GoldFishBread()
-b = GoldFishBread()
-
-a.make_Gold('팥',300)
-b.make_Gold('슈크림',400)
-
-print('붕어빵 두개에 %d원'%int(a+b))
-
-
-
-
+print("당신의 닉네임은 '%s'입니다"%name)
+print("당신의 레벨은 %dlv입니다"%level)
+print("당신이 있는 서버는 '%s'입니다"%server)
